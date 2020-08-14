@@ -31,7 +31,7 @@ module.exports = (req, res, next) => {
 
         var mailOptions = {
             from: 'protectviros@gmail.com',
-            to: 'bhanurocker999@gmail.com',
+            to: 'info@protectviros.com',
             subject: 'WEBSITE SUBMISSION',
             text: message
         };

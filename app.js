@@ -2,7 +2,7 @@ var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+// var logger = require('morgan');
 var { config, engine } = require('express-edge');
 
 var indexRouter = require('./routes/index');
@@ -14,7 +14,7 @@ var sendRouter = require('./routes/send');
 var app = express();
 
 app.use(engine);
-app.use(logger('dev'));
+// app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
